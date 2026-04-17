@@ -9,7 +9,7 @@ function Home() {
       <div className="h-screen w-screen fixed top-0 left-0 right-0">
         <Video />
       </div>
-      <div className="h-screen w-screen relative flex flex-col">
+      <div className="h-screen w-screen relative flex flex-col justify-between">
         <HeroTopText />
         <HeroBottomText />
       </div>
