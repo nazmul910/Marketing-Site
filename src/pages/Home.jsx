@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import Video from "../components/home/Video";
+import HeroTopText from "../components/home/HomeTopText";
+import HeroBottomText from "../components/home/HomeBottomText";
 
 function Home() {
   return (
-    <div>
-      <h1 className='text-red-400'>Home</h1>
-    </div>
-  )
+    <>
+      <div className="h-screen w-screen fixed">
+        <Video />
+      </div>
+      <div className="h-screen w-screen relative flex flex-col">
+        <HeroTopText />
+        <HeroBottomText />
+      </div>
+    </>
+  );
 }
 
-export default Home
+export default Home;
