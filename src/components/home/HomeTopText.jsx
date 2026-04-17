@@ -1,11 +1,18 @@
 import React from "react";
+import Video from "./Video";
 
 function HomeTopText() {
   return (
-    <div className="font-[font1]">
-      <div className="text-[9.5vw] uppercase leading-[9.5vw]">L'étincelle </div>
-      <div className="text-[9.5vw] uppercase leading-[9.5vw]">quigénère</div>
-      <div className="text-[9.5vw] uppercase leading-[9.5vw]">la créativité</div>
+    <div className="font-[font1] pt-5 text-center text-white">
+      <div className="text-[9.5vw] uppercase leading-[8vw] flex justify-center items-center">L'étincelle </div>
+      <div className="text-[9.5vw] uppercase leading-[8vw] flex justify-center items-center">
+        qui{" "}
+        <div className="h-[8vw] -mt-5 rounded-full overflow-hidden">
+          <Video />
+        </div>
+        génère
+      </div>
+      <div className="text-[9.5vw] uppercase leading-[8vw] flex justify-center items-center">la créativité</div>
     </div>
   );
 }
