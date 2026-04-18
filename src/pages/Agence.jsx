@@ -1,10 +1,17 @@
-import React from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import React, { use } from "react";
 
 function Agence() {
+
+  const imageDivRef = use
+    useGSAP(function(){
+      gsap.from
+    })
   return (
     <div>
       <div className="section1">
-        <div className=" absolute overflow-hidden rounded-3xl w-[15vw] h-[20vw] top-96 left-[30vw] bg-red-500">
+        <div ref={imageDivRef} className=" absolute overflow-hidden rounded-3xl w-[15vw] h-[20vw] top-96 left-[30vw] bg-red-500">
           <img
             className="object-cover h-full w-full"
             src="https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7"
