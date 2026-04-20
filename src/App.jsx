@@ -9,12 +9,21 @@ import gsap from 'gsap'
 function App() {
 
   useGSAP(function() {
-    gsap.from(".stair",{
+
+    const tl = gsap.timeline();
+
+    tl.from(".stair",{
       height:0,
-      duration:2,
       stagger:{
-        amount:-0.3,
+        amount:-0.25,
         
+      }
+    })
+
+    tl.to(".stair",{
+      y:"100%",
+      stagger:{
+        amount:-0.25
       }
     })
   })
@@ -23,9 +32,9 @@ function App() {
     <div className='text-white'>
       <div className='h-screen w-full flex fixed top-0 z-10'>
         <div className='stair h-full w-1/5 bg-black'></div>
-        <div className='stair h-full w-1/5 bg-white'></div>
         <div className='stair h-full w-1/5 bg-black'></div>
-        <div className='stair h-full w-1/5 bg-white'></div>
+        <div className='stair h-full w-1/5 bg-black'></div>
+        <div className='stair h-full w-1/5 bg-black'></div>
         <div className='stair h-full w-1/5 bg-black'></div>
       </div>
       <Routes>
