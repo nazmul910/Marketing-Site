@@ -7,11 +7,12 @@ import Projects from './pages/Projects'
 function App() {
   return (
     <div className='text-white'>
-      <div className='h-screen w-full flex fixed top-0'>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className='h-screen w-full flex fixed top-0 z-10'>
+        <div className='h-full w-1/5 bg-black'></div>
+        <div className='h-full w-1/5 bg-black'></div>
+        <div className='h-full w-1/5 bg-black'></div>
+        <div className='h-full w-1/5 bg-black'></div>
+        <div className='h-full w-1/5 bg-black'></div>
       </div>
       <Routes>
         <Route path='/' element={<Home />} />
