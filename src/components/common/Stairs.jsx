@@ -46,7 +46,7 @@ const pageRef = useRef(null);
 
     gsap.from(pageRef.current,{
         opacity:0,
-        duration:1.3,
+        delay:1.3,
         scale:1.2
     })
 

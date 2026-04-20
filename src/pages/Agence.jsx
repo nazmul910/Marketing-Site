@@ -49,7 +49,7 @@ function Agence() {
             alt=""
           />
         </div>
-        <div className="font-[font2] relative text-white">
+        <div className="font-[font2] relative text-black">
           <div className="mt-[55vh]">
             <h1 className="text-[20vw] text-center uppercase leading-[18vw]">
               Soixan7e <br /> Douze
