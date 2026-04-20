@@ -32,6 +32,11 @@ function Agence() {
           markers:true,
           scrub:true,
           pin:true,
+          pinSpacing:true,
+          pinReparent:true,
+          scrub:1,
+          anticipatePin:1,
+          invalidateOnRefresh:true,
           onUpdate: (elem) => {
             const imageIndex = Math.floor(elem.progress * (imageArray.length));
             imageRef.current.src = imageArray[imageIndex]
@@ -41,7 +46,7 @@ function Agence() {
     })
   return (
     <div>
-      <div className="section1">
+      <div className="section1 py-1">
         <div ref={imageDivRef} className=" absolute overflow-hidden rounded-3xl w-[15vw] h-[20vw] top-96 left-[30vw] bg-red-500">
           <img ref={imageRef}
             className="object-cover h-full w-full"
