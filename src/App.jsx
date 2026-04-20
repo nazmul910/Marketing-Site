@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <div className='text-white'>
+    <div className='text-black'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/agency' element={<Agence />} />
