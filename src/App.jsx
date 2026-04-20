@@ -6,7 +6,12 @@ import Projects from './pages/Projects'
 
 function App() {
   return (
-    <div>
+    <div className='text-white'>
+      <div>
+        <div>
+          
+        </div>
+      </div>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/agency' element={<Agence />} />
