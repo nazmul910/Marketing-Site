@@ -22,4 +22,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 ## GSAP ScrollTrigger is a plugin that enables scroll-based animations with minimal code, offering features like pinning, scrubbing, snapping, and horizontal scrolling support.  The official documentation is located at
+
+
+## Key configuration properties include trigger (the element to monitor), start and end (scroll positions), scrub (smooth scrubbing), and pin (locking elements in place). Animations can be linked directly to tweens or timelines, or created as standalone instances using ScrollTrigger.create()
  
