@@ -19,3 +19,7 @@ If you are developing a production application, we recommend using TypeScript wi
 ## When use gsap in react then isntall this dependency
 
 ## npm i @gsap/react with npm i gsap
+
+
+## GSAP ScrollTrigger is a plugin that enables scroll-based animations with minimal code, offering features like pinning, scrubbing, snapping, and horizontal scrolling support.  The official documentation is located at
+ 
