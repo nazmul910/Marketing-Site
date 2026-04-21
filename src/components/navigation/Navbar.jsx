@@ -19,7 +19,7 @@ function Navbar() {
       </div>
       </div>
       <div className="h-14 w-[16vw] bg-black  relative overflow-hidden cursor-pointer group">
-        <div className=" absolute w-full h-full bg-lime-300 group-hover:top-0 duration-500 transition-all ease-in-out  -top-full"></div>
+        <div className=" absolute top-0 w-full h-0 bg-lime-300 "></div>
         <div className="w-full relative h-full "></div>
         
       </div>
