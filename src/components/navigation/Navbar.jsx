@@ -18,7 +18,10 @@ function Navbar() {
         </svg>
       </div>
       </div>
-      <div className="bg-black h-14 w-[16vw]"></div>
+      <div className="h-14 w-[16vw] relative overflow-hidden cursor-pointer group">
+        <div className="bg-black w-full h-full "></div>
+        <div className=" absolute w-full h-full bg-lime-300 group-hover:top-0 duration-500 transition-all ease-in-out  -top-full"></div>
+      </div>
     </div>
   );
 }
