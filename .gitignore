@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+public/fonts/*.deb
+public/fonts/*.exe
+public/fonts/*.docx
+public/fonts/*.flatpakref
