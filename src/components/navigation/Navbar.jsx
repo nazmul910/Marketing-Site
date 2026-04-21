@@ -2,12 +2,13 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="flex fixed top-0 w-full items-start justify-between z-20 p-5">
-      <div>
+    <div className="flex fixed top-0 w-full items-start justify-between z-20">
+      <div className="p-5">
+              <div className="w-36">
         <svg
+        className="w-full"
           xmlns="http://www.w3.org/2000/svg"
-          width="103"
-          height="44"
+          fill="white"
           viewBox="0 0 103 44"
         >
           <path
@@ -16,7 +17,8 @@ function Navbar() {
           ></path>
         </svg>
       </div>
-      <div className="bg-black h-10 w-60"></div>
+      </div>
+      <div className="bg-black h-14 w-[16vw]"></div>
     </div>
   );
 }
