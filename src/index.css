@@ -14,3 +14,20 @@
 body{
     overflow-x:hidden;
 }
+
+.moveX{
+    /* animation: moveAnimation 10 infinite linear; */
+    animation-name: moveAnimation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveAnimation {
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
