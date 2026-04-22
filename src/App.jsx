@@ -12,13 +12,13 @@ function App() {
 
   return (
     <div className='text-black'>
-      {/* <Navbar/> */}
+      <Navbar/>
       <FullScreenNav/>
-      {/* <Routes>
+      <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/agency' element={<Agence />} />
         <Route path='/projects' element={<Projects />} />
-      </Routes> */}
+      </Routes>
     </div>
   )
 }
