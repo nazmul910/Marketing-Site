@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className='text-black'>
-      <Navbar/>
+      {/* <Navbar/> */}
       <FullScreenNav/>
       {/* <Routes>
         <Route path='/' element={<Home />} />
