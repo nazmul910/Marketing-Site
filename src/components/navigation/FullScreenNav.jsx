@@ -22,8 +22,8 @@ function FullScreenNav() {
             </svg>
           </div>
         </div>
-        <div>
-          <div></div>
+        <div className="w-32 h-32 relative bg-red-400">
+          <div className=""></div>
           <div></div>
         </div>
       </div>
