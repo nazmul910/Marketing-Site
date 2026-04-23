@@ -30,7 +30,7 @@ function FullScreenNav() {
 
   tl.to('.link',{
     opacity:1,
-    rotateX:90,
+    rotateX:0,
     stagger:{
       amount:0.2
     }
@@ -116,7 +116,7 @@ function FullScreenNav() {
             <div className="h-40 w-1 rotate-45 absolute transition-all duration-300 group-hover:bg-[#D3FD50] bg-white origin-top right-0"></div>
           </div>
         </div>
-        <div className="py-40">
+        <div className="py-30">
           <div className="link origin-top border-t border-white relative">
             <h1 className="font-[font2] text-[7vw] text-center uppercase leading-[0.8] pt-6">
               Projects
