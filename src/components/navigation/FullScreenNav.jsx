@@ -1,41 +1,89 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React, { useRef } from "react";
+import React, { use, useContext, useRef } from "react";
+import { NavbarContext } from "../../context/NavContext";
 
 function FullScreenNav() {
 
   const fullNavLinksRef = useRef(null)
+  const fullScreenRef = useRef(null);
 
-  useGSAP(
-    function () {
-      const tl = gsap.timeline();
+  const [isNavOpen,setIsNavOpen] = useContext(NavbarContext);
 
-      tl.from(".stairring", {
-      
-        height: 0,
-        stagger: {
-          amount: -0.25,
-        },
-      });
-      tl.from(fullNavLinksRef.current,{
-        opacity: 0,
-      })
 
-      tl.from(".link",{
-        delay:0.5,
-        opacity:0,
-        rotateX:90,
-        stagger:{
-          amount:0.2
-        }
-      })
 
-    });
+
+ function gsapAnimation(){
+
+  const tl = gsap.timeline();
+    tl.to('.fullscreennav',{
+      display:"block"
+    })
+
+  tl.to('.stairring',{
+    delay:0.2,
+    height:'100%',
+    stagger:{
+      amount:-0.3
+    }
+  })
+
+  tl.to('.link',{
+    opacity:1,
+    rotateX:90,
+    stagger:{
+      amount:0.2
+    }
+  })
+
+  tl.to('.navlink',{
+    opacity:1
+  })
+ }
+
+
+  function gsapAnimationReverse(){
+    const tl = gsap.timeline();
+
+      tl.to('.link',{
+    opacity:0,
+    rotateX:90,
+    stagger:{
+      amount:0.1
+    }
+  })
+
+
+  tl.to('.stairring',{
+    height:0,
+    stagger:{
+      amount:0.1
+    }
+  })
+
+
+  tl.to('.navlink',{
+    opacity:0
+  })
+  tl.to('.fullscreennav',{
+      display:"none",
+    })
+ }
+
+
+ useGSAP(function(){
+  if(isNavOpen){
+    gsapAnimation();
+  }else{ 
+    gsapAnimationReverse();
+  }
+ },[isNavOpen]);
 
   return (
     <div
+    ref={fullScreenRef}
       id="fullscreennav"
-      className="h-screen z-50 text-white w-full absolute bg-black"
+      className="hidden fullscreennav h-screen z-50 text-white w-full absolute"
     >
       <div  className="h-screen w-full fixed">
         <div className="h-full w-full flex ">
@@ -47,7 +95,7 @@ function FullScreenNav() {
         </div>
       </div>
       <div ref={fullNavLinksRef} className=" relative">
-        <div className="flex w-full justify-between p-5 items-start">
+        <div className="navlink flex w-full justify-between p-5 items-start">
           <div className="">
             <div className="w-36">
               <svg
@@ -63,7 +111,7 @@ function FullScreenNav() {
               </svg>
             </div>
           </div>
-          <div className="w-28 h-28 relative  cursor-pointer group">
+          <div onClick={() => setIsNavOpen(false)} className="w-28 h-28 relative  cursor-pointer group">
             <div className="h-40 w-1 -rotate-45 absolute transition-all duration-300 group-hover:bg-[#D3FD50] bg-white origin-top"></div>
             <div className="h-40 w-1 rotate-45 absolute transition-all duration-300 group-hover:bg-[#D3FD50] bg-white origin-top right-0"></div>
           </div>

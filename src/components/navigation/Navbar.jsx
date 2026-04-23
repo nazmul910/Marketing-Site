@@ -1,8 +1,10 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
+import { NavbarContext } from "../../context/NavContext";
 
 function Navbar() {
 
   const navGreenRef = useRef(null);
+  const [isNavOpen, setIsNavOpen] = useContext(NavbarContext);
 
   return (
     <div className="flex fixed top-0 w-full items-start justify-between z-20">
@@ -21,13 +23,18 @@ function Navbar() {
         </svg>
       </div>
       </div>
-      <div onMouseEnter={() =>{
+      <div 
+      onClick={() => setIsNavOpen(true)}
+      onMouseEnter={() =>{
         navGreenRef.current.style.height = "100%"
       }} onMouseLeave={() =>{
         navGreenRef.current.style.height = "0"
       }} className="h-14 w-[16vw] bg-black  relative overflow-hidden cursor-pointer group">
         <div ref={navGreenRef} className=" absolute top-0 w-full h-0 bg-[#D3FD50] transition-all "></div>
-        <div className="w-full relative h-full "></div>
+        <div className="w-full flex flex-col px-12 gap-2 items-end justify-center relative h-full ">
+          <div className="w-18 bg-white h-0.5"></div>
+          <div className="w-10 bg-white h-0.5"></div>
+        </div>
         
       </div>
     </div>
