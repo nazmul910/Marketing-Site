@@ -22,9 +22,9 @@ function FullScreenNav() {
             </svg>
           </div>
         </div>
-        <div className="w-32 h-32 relative bg-red-400">
-          <div className=""></div>
-          <div></div>
+        <div className="w-28 h-28 relative  cursor-pointer group">
+          <div className="h-40 w-1 -rotate-45 absolute transition-all duration-300 group-hover:bg-[#D3FD50] bg-white origin-top"></div>
+          <div className="h-40 w-1 rotate-45 absolute transition-all duration-300 group-hover:bg-[#D3FD50] bg-white origin-top right-0"></div>
         </div>
       </div>
       <div className="py-40">
