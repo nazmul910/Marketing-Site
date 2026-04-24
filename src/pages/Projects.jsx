@@ -3,7 +3,7 @@ import React from 'react'
 function Projects() {
   return (
     <div>
-      <h1 className='text-red-400'>Projects</h1>
+      <h1 className='text-black'>Projects</h1>
     </div>
   )
 }
