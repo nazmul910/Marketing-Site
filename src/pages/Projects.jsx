@@ -11,7 +11,7 @@ function Projects() {
           <div className='w-1/2 h-full bg-green-900'>
             <img src="public/project1.png" alt="" />
           </div>
-          <div className='w-1/2 h-full bg-blue-900'></div>
+
         </div>
       </div>
     </div>
