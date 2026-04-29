@@ -16,7 +16,7 @@ function ProjectCard() {
             </h2>
           </div>
         </div>
-        <div className="w-1/2 relative h-full hover:rounded-4xl overflow-hidden transition-all duration-300 ">
+        <div className="w-1/2 relative h-full hover:rounded-4xl overflow-hidden transition-all duration-300">
           <img
             className="h-full w-full object-cover"
             src="public/project1.png"
