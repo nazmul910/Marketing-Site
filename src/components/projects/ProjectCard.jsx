@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProjectCard({props}) {
+function ProjectCard(props) {
   return (
     <div>
       <div className="w-full gap-4 flex mb-4  h-175 ">
