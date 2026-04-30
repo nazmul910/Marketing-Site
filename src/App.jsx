@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-    <div className='text-black'>
+    <div className='text-black overflow-x-hidden'>
       <Navbar/>
       <FullScreenNav/>
       <Routes>

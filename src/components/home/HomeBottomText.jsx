@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 function HomeBottomText() {
   return (
     <div className="font-[font2] flex items-center text-white justify-center gap-2 ">
-      <div className="border-3 hover:border-[#D3FD50] hover:text-[#D3FD50] h-44 flex items-center px-14 border-white rounded-full uppercase">
-        <Link className="text-[6vw] mt-6" to="/projects">
+      <div className="border-3 hover:border-[#D3FD50] hover:text-[#D3FD50] lg:h-44 flex items-center px-14 border-white rounded-full uppercase">
+        <Link className="text-[6vw] " to="/projects">
           Projects
         </Link>
       </div>
-      <div className="border-3 hover:border-[#D3FD50] hover:text-[#D3FD50] h-44 flex items-center px-14 border-white rounded-full uppercase">
-        <Link className="text-[6vw] mt-6" to="/agency">
+      <div className="border-3 hover:border-[#D3FD50] hover:text-[#D3FD50] lg:h-44 flex items-center px-14 border-white rounded-full uppercase">
+        <Link className="text-[6vw] " to="/agency">
           Agency
         </Link>
       </div>
