@@ -10,7 +10,18 @@ function Projects() {
   },{
     image1: "/public/project3.png",
     image2: "/public/project4.png",
-  }]
+  },
+  {
+    image1: "/public/project5.png",
+    image2: "/public/project6.png",
+  },
+  
+  {
+    image1: "/public/project7.png",
+    image2: "/public/project8.png",
+  },
+
+]
 
   return (
     <div className='p-4'>
