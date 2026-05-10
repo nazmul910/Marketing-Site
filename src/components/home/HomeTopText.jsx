@@ -12,7 +12,7 @@ function HomeTopText() {
         </div>
         génère
       </div>
-      <div className="text-[9.5vw] uppercase leading-[8vw] flex justify-center items-center">la créativité</div>
+      <div className="text-[7.5vw] uppercase leading-[8vw] flex justify-center items-center">la créativité</div>
     </div>
   );
 }
