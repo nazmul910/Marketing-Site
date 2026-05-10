@@ -28,17 +28,17 @@ function Navbar() {
           navGreenRef.current.style.height = "100%";
         }}
         onMouseLeave={() => {
-          navGreenRef.current.style.height = "0";
+          navGreenRef.current.style.height = "0%";
         }}
-        className="lg:h-14 lg:w-[16vw] h-12 w-60 bg-black  relative overflow-hidden cursor-pointer group"
+        className="lg:h-14 lg:w-[16vw] h-12 w-48 bg-black  relative overflow-hidden cursor-pointer group"
       >
         <div
           ref={navGreenRef}
           className=" absolute top-0 w-full h-0 bg-[#D3FD50] transition-all "
         ></div>
         <div className="w-full flex flex-col px-12 gap-2 items-end justify-center relative h-full ">
-          <div className="w-18 bg-white h-0.5"></div>
-          <div className="w-10 bg-white h-0.5"></div>
+          <div className="lg:w-18 w-12 bg-white h-0.5"></div>
+          <div className="lg:w-10 w-6 bg-white h-0.5"></div>
         </div>
       </div>
     </div>
