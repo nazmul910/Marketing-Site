@@ -46,7 +46,7 @@ useGSAP(function(){
   return (
     <div className='p-4'>
       <div className='pt-[45vh]'>
-        <h2 className='font-[font2] text-[9vw] uppercase'>Projets</h2>
+        <h2 className='font-[font2] lg:text-[9vw] uppercase'>Projets</h2>
         
       </div>
       <div className='-mt-20 lol'>
