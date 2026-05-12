@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <div className="flex fixed top-0 w-full items-start justify-between z-20">
-      <div className="p-5">
+      <div className="p-2 md:p-5">
         <div className="lg:w-36 w-12">
           <svg
             className="w-full"
@@ -30,13 +30,13 @@ function Navbar() {
         onMouseLeave={() => {
           navGreenRef.current.style.height = "0%";
         }}
-        className="lg:h-14 lg:w-[16vw] h-12 w-48 bg-black  relative overflow-hidden cursor-pointer group"
+        className="lg:h-14 lg:w-[16vw] w-24 h-8 md:h-12  md:w-48 bg-black  relative overflow-hidden cursor-pointer group"
       >
         <div
           ref={navGreenRef}
           className=" absolute top-0 w-full h-0 bg-[#D3FD50] transition-all "
         ></div>
-        <div className="w-full flex flex-col px-12 gap-2 items-end justify-center relative h-full ">
+        <div className="w-full flex flex-col px-4 md:px-12 gap-2 items-end justify-center relative h-full ">
           <div className="lg:w-18 w-12 bg-white h-0.5"></div>
           <div className="lg:w-10 w-6 bg-white h-0.5"></div>
         </div>
