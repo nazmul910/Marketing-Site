@@ -45,11 +45,11 @@ useGSAP(function(){
 
   return (
     <div className='p-4'>
-      <div className='pt-[45vh]'>
+      <div className=' lg:pt-[40vh] xl:pt-[45vh]'>
         <h2 className='font-[font2] text-[11vw] md:text-[12vw] lg:text-[9vw] uppercase'>Projets</h2>
         
       </div>
-      <div className='-mt-20 lol'>
+      <div className='lg:-mt-8 xl:-mt-20 lol'>
         {
           projects.map(function(elem){
             return <div className='hero w-full gap-4 flex mb-4  h-175'>
