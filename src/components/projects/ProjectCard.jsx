@@ -3,7 +3,7 @@ import React from "react";
 function ProjectCard(props) {
   return (
     <>
-      <div className="w-full lg:w-1/2 border border-red-600 relative h-full hover:rounded-4xl overflow-hidden transition-all duration-300 ">
+      <div className="w-full lg:w-1/2 relative h-full hover:rounded-4xl overflow-hidden transition-all duration-300 ">
         <img
           className="h-full w-full object-cover"
           src={props?.image1}
@@ -33,7 +33,7 @@ function ProjectCard(props) {
             Voir le projet
           </h2>
         </div>
-                <div>
+        <div className=" block">
           <div className="flex justify-between items-start">
             <h2 className="font-[font1] text-2xl">{props?.title2}</h2>
             <p className="font-[font2] text-xl">{props?.year2}</p>
