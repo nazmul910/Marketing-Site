@@ -9,19 +9,43 @@ function Projects() {
 
   const projects = [{
     image1: "/public/project1.png",
+    title1:"Prendre les devants",
+    year1:"2025",
+    des1:"Description du projet 1",
     image2: "/public/project2.png",
+    title2:"Title 2",
+    year2:"2025",
+    des2:"Description du projet 2",
   },{
     image1: "/public/project3.png",
+    title1:"Title 3",
+    year1:"2025",
+    des1:"Description du projet 3",
     image2: "/public/project4.png",
+    title2:"Title 4",
+    year2:"2025",
+    des2:"Description du projet 4",
   },
   {
     image1: "/public/project5.png",
+    title1:"Title 5",
+    year1:"2025",
+    des1:"Description du projet 5",
     image2: "/public/project6.png",
+    title2:"Title 6",
+    year2:"2025",
+    des2:"Description du projet 6",
   },
   
   {
     image1: "/public/project7.png",
+    title1:"Title 7",
+    year1:"2025",
+    des1:"Description du projet 7",
     image2: "/public/project8.png",
+    title2:"Title 8",
+    year2:"2025",
+    des2:"Description du projet 8",
   },
 
 ]
@@ -53,7 +77,17 @@ useGSAP(function(){
         {
           projects.map(function(elem){
             return <div className='hero w-full gap-4 flex mb-4  h-175'>
-                <ProjectCard key={elem.image1} image1={elem.image1} image2={elem.image2}/>            
+                <ProjectCard 
+                  key={elem.image1} 
+                  image1={elem.image1} 
+                  image2={elem.image2}
+                  title1={elem.title1}
+                  year1={elem.year1}
+                  des1={elem.des1}
+                  title2={elem.title2}
+                  year2={elem.year2}
+                  des2={elem.des2}
+                />            
               </div>
 
           })
