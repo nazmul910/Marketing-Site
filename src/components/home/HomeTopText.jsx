@@ -1,4 +1,4 @@
-import React from "react";
+uimport React from "react";
 import Video from "./Video";
 
 function HomeTopText() {
@@ -10,7 +10,7 @@ function HomeTopText() {
         <div className="h-[8vw] w-[16vw] -mt-3 rounded-full overflow-hidden">
           <Video />
         </div>
-        génère
+        Génère
       </div>
       <div className="lg:text-[7.5vw] text-[10vw] uppercase lg:leading-[8vw] leading-[10vw] flex justify-center items-center">la créativité</div>
     </div>
