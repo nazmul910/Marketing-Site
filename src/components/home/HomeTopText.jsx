@@ -1,4 +1,4 @@
-uimport React from "react";
+import React from "react";
 import Video from "./Video";
 
 function HomeTopText() {
